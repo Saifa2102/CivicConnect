@@ -14,8 +14,6 @@ public class Register {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotNull(message = "Username cannot be null")
-    @Size(max = 10, min=3)
     private String name;
     private String address;
     private String number;
