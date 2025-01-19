@@ -15,11 +15,7 @@ public class Report_Issue {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotNull(message = "Username cannot be null")
-    @Size(max = 10, min=3)
     private String name;
-    @NotNull(message = "Email cannot be null")
-    @Email
     private String email;
     private String number;
     private String address;
