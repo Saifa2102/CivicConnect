@@ -35,7 +35,7 @@ public class Report_Issue_Controller {
 
     }
 
-    @GetMapping(path  ="{id}")
+    @GetMapping(path  ="/{id}")
     public ResponseEntity<Report_Issue_Dto> FetchById(@PathVariable Long id)
     {
         Report_Issue_Dto byid = reportIssueService.byid(id);
