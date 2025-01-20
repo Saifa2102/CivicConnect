@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/Register")
+@CrossOrigin(origins = "http://localhost:3000")
 public class RegisterController {
     private final RegisterService registerService;
 
